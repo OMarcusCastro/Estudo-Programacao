@@ -43,6 +43,7 @@ main{
     width: 100%;
     margin-top: 6.3rem;
     justify-content: space-between;
+    gap:1rem;
 }
 
 
@@ -62,6 +63,7 @@ h1{
     font-family: "JetBrains Mono", monospace;
     font-size: 36px;
     line-height: 2.5rem;
+    text-align: center;
 }
 p{
     text-align: center;  
@@ -75,11 +77,19 @@ p, a{
 }
 
 footer{
+    
+    margin-top:27px;
     font-family: 'JetBrains Mono',monospace;
 }
 
-line{
+.line{
     margin-top: 10rem;
-    border-top: 2px solid #00BFA6;
+    border-top: 1px solid #00BFA6;
     width: 35.5rem;
+}
+
+#icone{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
 }
