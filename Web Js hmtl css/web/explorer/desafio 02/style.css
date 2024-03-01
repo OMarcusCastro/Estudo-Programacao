@@ -41,9 +41,10 @@ li a{
 main{
     display: flex;
     width: 100%;
-    margin-top: 6.3rem;
-    justify-content: space-between;
-    gap:1rem;
+    margin: 6.3rem auto 0;
+    justify-content: center;
+    gap:15rem;
+    
 }
 
 
