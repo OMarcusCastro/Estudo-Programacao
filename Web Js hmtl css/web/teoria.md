@@ -23,5 +23,4 @@
 
 - get: envio de recursos pela url
 - post: envio de recursos pelo o corpo da requisicao 
-
-> dev tools -> network -> payload:query strings
+## Forms 
