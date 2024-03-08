@@ -21,3 +21,7 @@
 [tags](https://efficient-sloth-d85.notion.site/Principais-elementos-HTML-da8b750fee5b49f2923fdc35b1c921fc#def069b2c4124571a6942d82010073c8)
 
 
+- get: envio de recursos pela url
+- post: envio de recursos pelo o corpo da requisicao 
+
+> dev tools -> network -> payload:query strings
