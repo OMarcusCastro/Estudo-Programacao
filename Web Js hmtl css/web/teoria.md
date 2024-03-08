@@ -27,3 +27,7 @@
 - vendor-prefixes -> faz referencia a navegadores
 
 usar o can i use site para suporte em todos os navegadores
+
+- get: envio de recursos pela url
+- post: envio de recursos pelo o corpo da requisicao 
+
