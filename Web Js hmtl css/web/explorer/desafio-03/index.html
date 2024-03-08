@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Meu formulario</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+        <header>    
+            <h1>avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="images/icone.svg"/>
+    
+            <div class="infoHeader">
+                <h1>Informações pessoais</h1>
+            </div>
+        </header>
+        <main>
+            <form>
+                <div class="infosUser">
+
+                    <div class="nome">
+                        <div class="campoInput">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome">
+                        </div>
+    
+                        <div class="campoInput">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome">
+                        </div>
+    
+                    </div>
+
+                    <div class="campoInput">
+                        <label for="emailField">Email</label>
+                        <input type="email" id="emailField">
+                    </div>
+                </div>
+
+                <h1>Informações do mentor</h1>
+
+                <div class="mentor">
+
+                    <div class="campoInput">
+                        <label for = 'mentor'>Selecione quem foi o seu mentor</label>
+                        <select class="inputSelect"  id="mentor">
+                            <option value="Marcus Castro">Marcus Castro</option>
+                            <option value="Diego dos Foguetes">Diego dos Foguetes</option>
+                            <option value="Mayk Brito">Mayk Brito</option>
+                               
+                        </select>
+                    </div>
+    
+                    <div class="campoInput">
+                        <label for="feedback">Feedback sobre o mentor</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="event-private" name="event-password" >
+                        <label for="event-private">Evento privado</label>
+                    </div>
+
+                </div>
+            </form>
+        </main>
+    
+</body>
+</html>

@@ -20,8 +20,10 @@
 
 [tags](https://efficient-sloth-d85.notion.site/Principais-elementos-HTML-da8b750fee5b49f2923fdc35b1c921fc#def069b2c4124571a6942d82010073c8)
 
-
-## Forms 
+## Forms
 
 - fieldset --> agrupamento de campos
 - legend --> legenda para o conjuto de campos(infos)
+- vendor-prefixes -> faz referencia a navegadores
+
+usar o can i use site para suporte em todos os navegadores
