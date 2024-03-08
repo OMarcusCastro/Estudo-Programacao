@@ -25,117 +25,19 @@
             </p>
         </header>
     
-        <form id="my-form" >
+        <form >
             <fieldset>
-                <div class="fieldset-wrapper">
-
-                    <legend>
-                        Informações do evento
-                    </legend>
-                    <div class="input-wrapper">
-                        <label for="event-title">Título do evento <span>(mínimio 8 caracteres)</span> </label>
-                        <input 
-                            type="text" 
-                            id="event-title" 
-                            name="event-title"
-                            minlength="8" 
-                            required
-                        >
-                    </div>
-                    
-                    <div class="input-wrapper">
-                        <label for="event-url">Link do evento <span>(comece com https://...)</span> </label>
-                        <input type="url" id="event-link" name="event-link" >
-                    </div>
-                    
-                    <div class="input-wrapper">
-                        <label for="event-whatsapp">Whatsapp para contato<span>(somente numeros)</span> </label>
-                        <input type="number" id="event-whatsapp" name="event-whatsapp" >
-                    </div>
-                    
-                    <div class="input-wrapper">
-                        <label for="event-info">Informações extras</label>
-                        <textarea id="event-info"></textarea>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="event-whatsapp">Whatsapp para contato<span>(somente numeros)</span> </label>
-                        <select name="" id="event-category">
-                            <option value="live">Categoria 1</option>
-                            <option value="podcast">Categoria 2</option>
-                            <option value="mentorship">Categoria 3</option>
-                            
-                        </select>
-                    </div>
+                <legend>
+                    Informações do evento
+                </legend>
+                <div class="input-wrapper">
+                    <label for="event-title">Título do evento <span>(mínimio 8 caracteres)</span> </label>
+                    <input type="text" id="event-title" name="event-title" required>
                 </div>
-                
+
             </fieldset>
-
-            <fieldset>
-                <div class="fieldset-wrapper">
-
-                    <legend>Informações do evento</legend>
-
-                    <div class="input-wrapper">
-                        <label for="event-email">Email do administrador<span>(digite um email valido)</span> </label>
-                        <input type="email" id="event-email" name="event-email" >
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="event-password">Senha de acesso para os participantes <span>(mínimio 8 caracteres)</span> </label>
-                        <input 
-                         type="password" 
-                         id="event-password" 
-                         name="event-password" 
-                         required
-                         minlength="8" 
-                        >
-                    </div>
-                    
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" id="event-private" name="event-password" >
-                        <label for="event-private">Evento privado</label>
-                    </div>
-                    
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <div class="fieldset-wrapper">
-
-                    <legend>Dia e hora</legend>
-                    
-                    <div class="col-3">
-
-                        <div class="input-wrapper">
-                            <label for="event-date">Data</label>
-                            <input type="date" id="event-date" name="event-date" >
-                        </div>
-                        
-                        <div class="input-wrapper">
-                            <label for="event-begin">Das</span> </label>
-                            <input type="time" id="event-begin" name="event-begin" >
-                        </div>
-                        
-                        <div class="input-wrapper">
-                            <label for="event-end">Até </label>
-                            <input type="time" id="event-end" name="event-end" >
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </fieldset>
-
-            
+    
         </form>
-        <footer>
-            <input 
-            class="button" 
-            type="submit" 
-            form="my-form"
-            value="Salvar evento">
-        </footer>
     </div>
 </body>
 </html>
