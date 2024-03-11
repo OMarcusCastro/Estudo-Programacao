@@ -201,6 +201,17 @@ form h1{
     gap: 22px;
     box-sizing:border-box ;
     justify-content: center;
+    margin-bottom: 31.73px;
+}
+
+.mentor textarea{
+    height: 10rem;
+}
+
+.check label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .check input{
