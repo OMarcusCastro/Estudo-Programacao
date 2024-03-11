@@ -23,7 +23,7 @@
             </div>
         </header>
         <main>
-            <form>
+            <form id = "evento">
                 <div class="infosUser">
 
                     <div class="nome">
@@ -79,16 +79,26 @@
                         <input type="date" id="event-date" name="event-date" >
                     </div>
                     <div class="campoInput">
-                        <label for="event-data">Das</label>
-                        <input type="time" id="event-time" name="event-time" >
+                        <label for="event-begin">Das</label>
+                        <input type="time" id="event-begin" name="event-begin" >
                     </div>
                     <div class="campoInput">
-                        <label for="event-data">Até</label>
-                        <input type="time" id="event-time" name="event-time" >
+                        <label for="event-end">Até</label>
+                        <input type="time" id="event-end" name="event-end" >
                     </div>
                 </div>
-
+            
+                <input 
+                type="submit" 
+                class="button"  
+                value="Salvar"
+                form="evento"
+                >
+                    
+                
             </form>
+
+            
         </main>
     
 </body>
