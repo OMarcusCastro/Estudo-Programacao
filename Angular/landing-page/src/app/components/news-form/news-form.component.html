@@ -1,0 +1,21 @@
+<section class ="form-section ">
+  <div class="text">
+    <h3>Fique por dentro das tendencias</h3>
+    <p>Receba novidades de tecnologia</p>
+  </div>
+
+  <form [formGroup]="newsletterForm">
+    <label for ="name">Name</label>
+    <input id = "name" formControlName="name"/>
+    <label for="email" >Email</label>
+    <input id="email" formControlName="email"/>
+    <btn-primary
+    btn-text="se inscreva"
+    variant="secondary"
+    (submit)="onSubmit()"
+    [disabled]="!newsletterForm.valid"
+    [loading]="loading()"
+    ></btn-primary>
+
+  </form>
+</section>
