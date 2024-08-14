@@ -3,12 +3,14 @@
 ## introducao
 
 - write one, run anywhere
+
   - multiplataforma
   - Codigo vonte -> javaC(no sistema op compila)->Bytecode -> jvm
   - ![Alt text](image.png)
   - Compilada(javac) e interpretada(JVM)
 
 - Jre
+
   - Java Runtime Environment
   - JVM
   - So possui necessario para executar
@@ -33,7 +35,7 @@ public class EstruturaDeDados {
 
         nomes.add("marcus");
         nomes.add("Diego");
-        
+
         System.out.println(nomes.get(0));
         System.out.println(nomes);
 
@@ -52,17 +54,17 @@ public class EstruturaDeDados {
 
 ### HashMap
 
->só pega um valor por chave, vai prevalecer a ultima. Chave valor 
+> só pega um valor por chave, vai prevalecer a ultima. Chave valor
 
 ```java
 import java.util.HashMap;
 import java.util.Map;
 
 public class Colecoes {
-    public static void main(String[] args) {   
+    public static void main(String[] args) {
         Map<String, Integer> notas = new HashMap<>();
         notas.put("marcus",10);
-        notas.put("diego",8); 
+        notas.put("diego",8);
 
         var nota = notas.get("marcus");
         System.out.println(nota);
@@ -76,10 +78,9 @@ public class Colecoes {
 }
 ```
 
-
 ### HashSet
 
->Nocao somente de valor, nao contem index. Ideia de conjuntos
+> Nocao somente de valor, nao contem index. Ideia de conjuntos
 
 ```java
 import java.util.HashSet;
@@ -101,6 +102,40 @@ public class ColecaoHashSet {
 
         System.out.println(numeros.contains(14));
 
+    }
+}
+```
+
+## Tipos de dados - Java
+
+- Primitivos
+  - byte
+  - short
+  - int
+  - long
+  - float
+  - double
+  - char
+  - boolean
+
+## Print com casas de precisao
+
+```java
+system.out.printf("%.2f", 10.123456);
+```
+
+## Entrada de dados
+
+```java
+import java.util.Scanner;
+
+public class EntradaDeDados {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite seu nome:");
+        String nome = scanner.nextLine();
+        System.out.println("Seu nome é "+nome);
+        scanner.close();
     }
 }
 ```
