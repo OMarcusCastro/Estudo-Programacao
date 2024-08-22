@@ -1,38 +1,33 @@
 package entities;
-import  java.util.Date;
-
 
 import entities.enums.OrderStatus;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 public class Order {
-	private Integer id;
-	private  Date moment;
+	private Date moment;
+	private Client client;
 	private OrderStatus status;
+	private List<OrderItem> items=new ArrayList<>();
 
-	public Order(){
-
-	}
-
-	public Order(Integer id,Date moment,OrderStatus status){
-		this.id = id;
+	public Order(Date moment, OrderStatus status,Client client) {
 		this.moment = moment;
 		this.status = status;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
+		this.client=client;
 	}
 
 	public Date getMoment() {
 		return moment;
 	}
 
-	public void setMoment(Date moment) {
-		this.moment = moment;
+	public Client getClient() {
+		return client;
+	}
+
+	public void setClient(Client client) {
+		this.client = client;
 	}
 
 	public OrderStatus getStatus() {
@@ -43,12 +38,36 @@ public class Order {
 		this.status = status;
 	}
 
+	public List<OrderItem> getItems() {
+		return items;
+	}
+
+
+
+	public void addItem(OrderItem item){
+		items.add(item);
+
+	}
+
+	public void removeItem(OrderItem item){
+		items.remove(item);
+	}
+
+	public double total(){
+		Double sum=0.0;
+		for(OrderItem item:items){
+			sum+=item.subTotal();
+		}
+		return sum;
+	}
+
 	@Override
 	public String toString() {
 		return "Order{" +
-				"id=" + id +
-				", moment=" + moment +
+				"moment=" + moment +
+				", client=" + client +
 				", status=" + status +
+				", items=" + items +
 				'}';
 	}
 }
